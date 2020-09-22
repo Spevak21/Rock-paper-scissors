@@ -1,0 +1,59 @@
+@keyframes shakeLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    17% {
+        transform: rotate(-15deg);
+    }
+
+    34% {
+        transform: rotate(0deg);
+    }
+
+    51% {
+        transform: rotate(-15deg);
+    }
+
+    68% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes shakeRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    17% {
+        transform: rotate(15deg);
+    }
+
+    34% {
+        transform: rotate(0deg);
+    }
+
+    51% {
+        transform: rotate(15deg);
+    }
+
+    68% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}

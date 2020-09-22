@@ -1,0 +1,46 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .5rem 2rem;
+        letter-spacing: 3px;
+        border-radius: 10rem;
+        color: $color-1;
+        background-color: $color-3;
+        border: .3rem solid $color-5;
+        text-shadow: 3px 3px 5px $color-5;
+        box-shadow: 2px 2px 3px $color-1 inset,
+                    -2px -2px 3px $color-5 inset,
+                    .5rem .5rem 1rem rgba($color-5, .8);
+    }
+
+    &:active {
+        box-shadow: 2px 2px 3px $color-5 inset,
+                    -2px -2px 3px $color-1 inset,
+                    .2rem .2rem .3rem rgba($color-5, .8);
+    }
+
+    &-rules {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    &.btn-reload {
+        position: absolute;
+        top: 2rem;
+        left: 50vw;
+        transform: translateX(-50%);
+        font-size: 4rem;
+
+        @media only screen and (max-width: 900px) {
+            left: 2rem;
+            transform: translateX(0);
+            padding: 0 1.5rem;
+        }
+    }
+}

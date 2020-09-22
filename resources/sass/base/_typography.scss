@@ -1,0 +1,82 @@
+body {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: $default-font-size;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    letter-spacing: 3px;
+}
+
+.section-main {
+    
+    .name {
+        font-size: 8rem;
+        color: $color-1;
+        font-weight: 300;
+        text-shadow: 5px 5px 8px $color-5;
+
+        &::placeholder {
+            color: $color-1;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 6rem;
+
+            &::placeholder {
+                font-size: 6rem;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            font-size: 5rem;
+
+            &::placeholder {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    .score {
+        font-size: 5rem;
+        font-weight: 300;
+        text-align: center;
+        line-height: 7rem;
+        letter-spacing: 3px;
+        text-shadow: 3px 3px 5px $color-4;
+        color: $color-5;
+        background-color: $color-2;
+        height: 50%;
+        width: 100%;
+
+        &-label {
+            font-size: 2.5rem;
+            color: $color-1;
+            text-shadow: 3px 3px 5px $color-5;
+        }
+    }
+
+    .sign {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30rem;
+        color: $color-1;
+        text-shadow: 1rem 1rem 1rem rgba($color-4, .5);
+        line-height: 1;
+    }
+}
+
+.section-end-screen {
+    font-size: 3rem;
+    text-align: center;
+    color: $color-3;
+
+    span {
+        color: $color-5;
+    }
+
+    @media only screen and (max-width: 700px) {
+        font-size: 2.5rem;
+    }
+}
